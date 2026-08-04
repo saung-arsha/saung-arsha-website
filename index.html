@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Saung Arsha — Hidden Gem di Tengah Hutan</title>
+<meta name="description" content="Saung Arsha adalah penginapan tersembunyi di tengah hutan dengan udara sejuk, suasana tenang, dan pemandangan alam yang memukau. Tempat healing terbaik jauh dari keramaian kota.">
+<meta name="keywords" content="Saung Arsha, hidden gem, penginapan hutan, wisata alam, healing spot, camping, eco lodge">
+<meta name="author" content="Saung Arsha">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Saung Arsha — Hidden Gem di Tengah Hutan">
+<meta property="og:description" content="Penginapan tersembunyi di tengah hutan dengan udara sejuk, suasana tenang, dan pemandangan alam yang memukau.">
+<meta property="og:image" content="assets/images/og-image.jpg">
+<meta property="og:locale" content="id_ID">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ================= LOADING SCREEN ================= -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__mark">
+    <span class="loader__ring"></span>
+    <span class="loader__leaf">🌿</span>
+  </div>
+  <p class="loader__text">Saung Arsha</p>
+</div>
+
+<!-- ================= SCROLL PROGRESS ================= -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#hero" class="navbar__brand">
+      <span class="navbar__brand-mark"><img src="assets/images/logo.png" alt="Logo Saung Arsha"></span>
+      <span class="navbar__brand-name">Saung Arsha</span>
+    </a>
+
+    <nav class="navbar__nav" id="navMenu">
+      <a href="#tentang" class="navbar__link" data-nav>Tentang</a>
+      <a href="#mengapa" class="navbar__link" data-nav>Mengapa Kami</a>
+      <a href="#galeri" class="navbar__link" data-nav>Galeri</a>
+      <a href="#area" class="navbar__link" data-nav>Area</a>
+      <a href="#denah" class="navbar__link" data-nav>Denah</a>
+      <a href="#faq" class="navbar__link" data-nav>FAQ</a>
+      <a href="#kontak" class="navbar__link navbar__link--cta" data-nav>Kontak</a>
+    </nav>
+
+    <button class="navbar__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu" id="mobileMenu">
+  <nav class="mobile-menu__nav">
+    <a href="#tentang" data-nav-mobile>Tentang</a>
+    <a href="#mengapa" data-nav-mobile>Mengapa Kami</a>
+    <a href="#galeri" data-nav-mobile>Galeri</a>
+    <a href="#area" data-nav-mobile>Area</a>
+    <a href="#denah" data-nav-mobile>Denah</a>
+    <a href="#faq" data-nav-mobile>FAQ</a>
+    <a href="#kontak" data-nav-mobile>Kontak</a>
+  </nav>
+  <div class="mobile-menu__footer">
+    <a href="https://wa.me/6281546563956" target="_blank" rel="noopener" class="btn btn--primary">Hubungi via WhatsApp</a>
+  </div>
+</div>
+
+<main id="hero">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero__media">
+      <img src="assets/images/hero.jpg" alt="Pemandangan Saung Arsha di tengah hutan saat sore hari" class="hero__img">
+      <div class="hero__overlay"></div>
+      <div class="hero__glow"></div>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__logo reveal" data-reveal>
+        <span class="hero__logo-mark"><img src="assets/images/logo.png" alt="Logo Saung Arsha"></span>
+      </div>
+      <p class="hero__eyebrow reveal" data-reveal data-delay="1">Hidden Gem &middot; Tengah Hutan</p>
+      <h1 class="hero__title reveal" data-reveal data-delay="2">Saung <em>Arsha</em></h1>
+      <p class="hero__tagline reveal" data-reveal data-delay="3">Tenang di antara pepohonan, hangat di bawah cahaya senja.</p>
+      <p class="hero__desc reveal" data-reveal data-delay="4">
+        Penginapan tersembunyi dengan udara sejuk, suara sungai, dan pemandangan hutan yang membuat waktu terasa melambat.
+      </p>
+      <div class="hero__actions reveal" data-reveal data-delay="5">
+        <a href="#tentang" class="btn btn--primary btn--ripple">Jelajahi Saung Arsha</a>
+      </div>
+    </div>
+
+    <a href="#tentang" class="hero__scroll" aria-label="Gulir ke bawah">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-text">Gulir</span>
+    </a>
+  </section>
+
+  <!-- ================= DIVIDER ================= -->
+  <div class="section-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,32 C240,80 480,0 720,28 C960,56 1200,10 1440,40 L1440,90 L0,90 Z"></path></svg>
+  </div>
+
+  <!-- ================= TENTANG ================= -->
+  <section class="about" id="tentang">
+    <div class="container about__grid">
+      <div class="about__media reveal-left" data-reveal>
+        <img src="assets/images/about.jpg" loading="lazy" alt="Suasana penginapan Saung Arsha dikelilingi pepohonan hutan" class="about__img">
+        <div class="about__media-frame"></div>
+      </div>
+
+      <div class="about__content">
+        <p class="eyebrow reveal" data-reveal>Tentang Kami</p>
+        <h2 class="section-title reveal" data-reveal data-delay="1">Sepetak Ketenangan yang Bersembunyi di Hutan</h2>
+        <p class="about__text reveal" data-reveal data-delay="2">
+          Saung Arsha lahir dari keinginan sederhana: menghadirkan tempat singgah yang jujur pada alamnya. Tanpa keramaian, tanpa hiruk‑pikuk — hanya suara angin di dedaunan, gemericik sungai kecil, dan cahaya sore yang menembus kanopi pepohonan.
+        </p>
+        <p class="about__text reveal" data-reveal data-delay="3">
+          Kami menjaga setiap sudut agar tetap dekat dengan alam, sehingga setiap kunjungan terasa seperti pulang ke rumah yang lebih tenang.
+        </p>
+
+        <p class="about__text reveal" data-reveal data-delay="4">
+          Berlokasi di lereng perbukitan yang jauh dari padatnya jalan raya, Saung Arsha menjadi persinggahan bagi mereka yang ingin melepas penat sejenak — cukup satu atau dua malam, untuk kembali merasa utuh.
+        </p>
+        <p class="about__text reveal" data-reveal data-delay="5">
+          Setiap bangunan di sini dirancang menyatu dengan kontur tanah dan pepohonan asli, tanpa menebang lebih dari yang diperlukan. Kami percaya, penginapan terbaik adalah yang membiarkan alam tetap menjadi tuan rumahnya.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MENGAPA MEMILIH ================= -->
+  <section class="why" id="mengapa">
+    <div class="container">
+      <p class="eyebrow eyebrow--center reveal" data-reveal>Mengapa Memilih Kami</p>
+      <h2 class="section-title section-title--center reveal" data-reveal data-delay="1">Alasan Tamu Kami Selalu Ingin Kembali</h2>
+
+      <div class="why__grid">
+        <div class="why-card reveal" data-reveal data-delay="1">
+          <span class="why-card__icon">🌬️</span>
+          <h3>Udara Sejuk</h3>
+          <p>Dikelilingi pepohonan tinggi yang menjaga udara tetap segar sepanjang hari.</p>
+        </div>
+        <div class="why-card reveal" data-reveal data-delay="2">
+          <span class="why-card__icon">🕊️</span>
+          <h3>Suasana Tenang</h3>
+          <p>Jauh dari bising kota, hanya suara alam yang menemani.</p>
+        </div>
+        <div class="why-card reveal" data-reveal data-delay="3">
+          <span class="why-card__icon">🏞️</span>
+          <h3>Pemandangan Alam</h3>
+          <p>Hamparan hutan hijau dan aliran sungai yang menyejukkan mata.</p>
+        </div>
+        <div class="why-card reveal" data-reveal data-delay="4">
+          <span class="why-card__icon">💎</span>
+          <h3>Hidden Gem</h3>
+          <p>Tersembunyi dari keramaian, hanya diketahui oleh mereka yang mencari ketenangan.</p>
+        </div>
+        <div class="why-card reveal" data-reveal data-delay="1">
+          <span class="why-card__icon">📷</span>
+          <h3>Instagramable</h3>
+          <p>Setiap sudut Saung Arsha layak untuk diabadikan.</p>
+        </div>
+        <div class="why-card reveal" data-reveal data-delay="2">
+          <span class="why-card__icon">🌿</span>
+          <h3>Healing Spot</h3>
+          <p>Tempat yang tepat untuk melepas penat dari rutinitas.</p>
+        </div>
+        <div class="why-card reveal" data-reveal data-delay="3">
+          <span class="why-card__icon">⛺</span>
+          <h3>Camping Area</h3>
+          <p>Area luas yang nyaman untuk mendirikan tenda bersama teman.</p>
+        </div>
+        <div class="why-card reveal" data-reveal data-delay="4">
+          <span class="why-card__icon">👨‍👩‍👧‍👦</span>
+          <h3>Family Friendly</h3>
+          <p>Aman dan nyaman untuk dikunjungi bersama keluarga tercinta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ALBUM FOTO ================= -->
+  <section class="gallery" id="galeri">
+    <div class="container">
+      <p class="eyebrow eyebrow--center reveal" data-reveal>Album Foto</p>
+      <h2 class="section-title section-title--center reveal" data-reveal data-delay="1">Setiap Sudut Punya Ceritanya Sendiri</h2>
+      <p class="section-sub reveal" data-reveal data-delay="2">Sentuh salah satu foto untuk melihat lebih dekat.</p>
+
+      <div class="gallery__grid" id="galleryGrid">
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/kay.jpeg" data-title="Saung Kay">
+          <img src="assets/images/kay.jpeg" loading="lazy" alt="Saung Kay" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Saung Kay</span></span>
+        </button>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/mahoni2.jpeg" data-title="Saung Mahoni 2">
+          <img src="assets/images/mahoni2.jpeg" loading="lazy" alt="Saung Mahoni 2" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Saung Mahoni 2</span></span>
+        </button>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/morning.jpeg" data-title="Suasana Pagi">
+          <img src="assets/images/morning.jpeg" loading="lazy" alt="Suasana Pagi" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Suasana Pagi</span></span>
+        </button>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/malam.jpeg" data-title="Suasana Malam">
+          <img src="assets/images/malam.jpeg" loading="lazy" alt="Suasana Malam" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Suasana Malam</span></span>
+        </button>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/mushola.jpeg" data-title="Mushola">
+          <img src="assets/images/mushola.jpeg" loading="lazy" alt="Mushola" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Mushola</span></span>
+        </button>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/mahoni1.jpeg" data-title="Saung Mahoni 1">
+          <img src="assets/images/mahoni1.jpeg" loading="lazy" alt="Saung Mahoni 1" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Saung Mahoni 1</span></span>
+        </button>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/kaliandra.jpeg" data-title="Saung Kaliandra">
+          <img src="assets/images/kaliandra.jpeg" loading="lazy" alt="Saung Kaliandra" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Saung Kaliandra</span></span>
+        </button>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/sungai1.jpeg" data-title="Area sungai di bawah jembatan">
+          <img src="assets/images/sungai1.jpeg" loading="lazy" alt="Area sungai di bawah jembatan" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Area sungai di bawah jembatan</span></span>
+        </button>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/pagi.jpeg" data-title="Pagi hari">
+          <img src="assets/images/pagi.jpeg" loading="lazy" alt="Detail arsitektur saung kayu" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Pagi hari</span></span>
+        </button>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/night.jpeg" data-title="Warung di malam hari">
+          <img src="assets/images/night.jpeg" loading="lazy" alt="Warung di malam hari" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Warung di malam hari</span></span>
+        </button>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/board.jpeg" data-title="Board Saung Arsha">
+          <img src="assets/images/board.jpeg" loading="lazy" alt="Suasana Malam" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Board Saung Arsha</span></span>
+        </button>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/arsha.jpeg" data-title="Saung Arsha">
+          <img src="assets/images/arsha.jpeg" loading="lazy" alt="Warung di malam hari" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Saung Arsha</span></span>
+        </button>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/makan1.jpeg" data-title="Makan bersama di malam hari">
+          <img src="assets/images/makan1.jpeg" loading="lazy" alt="Makan bersama di malam hari" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Makan bersama di malam hari</span></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Tutup">&times;</button>
+    <button class="lightbox__prev" id="lightboxPrev" aria-label="Sebelumnya">&#10094;</button>
+    <figure class="lightbox__figure">
+      <img src="" alt="" class="lightbox__img" id="lightboxImg">
+      <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox__next" id="lightboxNext" aria-label="Berikutnya">&#10095;</button>
+  </div>
+
+  <!-- ================= HIGHLIGHT AREA (SLIDER) ================= -->
+  <section class="highlight" id="area">
+    <div class="container container--bleed">
+      <p class="eyebrow eyebrow--center reveal" data-reveal>Highlight Area</p>
+      <h2 class="section-title section-title--center reveal" data-reveal data-delay="1">Area Favorit di Saung Arsha</h2>
+
+      <div class="highlight__slider" id="highlightSlider">
+        <div class="highlight__track" id="highlightTrack">
+          <div class="highlight-card">
+            <img src="assets/images/skay.jpeg" loading="lazy" alt="Saung Kay" class="highlight-card__img">
+            <div class="highlight-card__label">Saung Kay</div>
+          </div>
+          <div class="highlight-card">
+            <img src="assets/images/sungai1.jpeg" loading="lazy" alt="Sungai" class="highlight-card__img">
+            <div class="highlight-card__label">Sungai</div>
+          </div>
+          <div class="highlight-card">
+            <img src="assets/images/warung.jpeg" loading="lazy" alt="Warung Sawali" class="highlight-card__img">
+            <div class="highlight-card__label">Warung Sawali</div>
+          </div>
+          <div class="highlight-card">
+            <img src="assets/images/sedong.jpeg" loading="lazy" alt="Batu Sedong" class="highlight-card__img">
+            <div class="highlight-card__label">Batu Sedong</div>
+          </div>
+          <div class="highlight-card">
+            <img src="assets/images/apiunggun.jpeg" loading="lazy" alt="Area api unggun" class="highlight-card__img">
+            <div class="highlight-card__label">Area api unggun</div>
+          </div>
+          <div class="highlight-card">
+            <img src="assets/images/kebun.jpeg" loading="lazy" alt="Kebun" class="highlight-card__img">
+            <div class="highlight-card__label">kebun</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="highlight__controls">
+        <button class="highlight__btn" id="highlightPrev" aria-label="Geser ke kiri">&#10094;</button>
+        <button class="highlight__btn" id="highlightNext" aria-label="Geser ke kanan">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DENAH KAWASAN ================= -->
+  <section class="denah" id="denah">
+    <div class="container">
+      <p class="eyebrow eyebrow--center reveal" data-reveal>Denah Kawasan</p>
+      <h2 class="section-title section-title--center reveal" data-reveal data-delay="1">Kenali Setiap Sudut Sebelum Berkunjung</h2>
+      <p class="section-sub reveal" data-reveal data-delay="2">Ketuk titik pada denah untuk melihat informasi lokasi.</p>
+
+      <div class="denah__wrap reveal" data-reveal data-delay="3">
+        <img src="assets/images/denah.jpeg" alt="Denah kawasan Saung Arsha" class="denah__img">
+
+        <div class="denah__tooltip" id="denahTooltip">
+          <button class="denah__tooltip-close" id="denahTooltipClose" aria-label="Tutup">&times;</button>
+          <h4 id="denahTooltipTitle"></h4>
+          <p id="denahTooltipDesc"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="faq" id="faq">
+    <div class="container container--narrow">
+      <p class="eyebrow eyebrow--center reveal" data-reveal>Pertanyaan Umum</p>
+      <h2 class="section-title section-title--center reveal" data-reveal data-delay="1">Yang Sering Ditanyakan Tamu Kami</h2>
+
+      <div class="accordion" id="accordion">
+        <div class="accordion__item reveal" data-reveal>
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>Jam berapa Saung Arsha buka?</span>
+            <span class="accordion__icon">+</span>
+          </button>
+          <div class="accordion__panel">
+            <p>Saung Arsha buka setiap hari dan setiap saat, silakan hubungi kami terlebih dahulu.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item reveal" data-reveal>
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>Apakah bisa menginap di sini?</span>
+            <span class="accordion__icon">+</span>
+          </button>
+          <div class="accordion__panel">
+            <p>Bisa. Tersedia beberapa saung yang nyaman untuk menginap dengan suasana hutan yang tenang sepanjang malam.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item reveal" data-reveal>
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>Apakah tersedia area untuk camping?</span>
+            <span class="accordion__icon">+</span>
+          </button>
+          <div class="accordion__panel">
+            <p>Tersedia area camping yang luas dan teduh, cocok untuk mendirikan tenda bersama keluarga atau teman.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item reveal" data-reveal>
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>Bagaimana cara menuju lokasi?</span>
+            <span class="accordion__icon">+</span>
+          </button>
+          <div class="accordion__panel">
+            <p>Lokasi dapat diakses menggunakan kendaraan pribadi. Silakan gunakan tombol "Buka di Google Maps" pada bagian kontak untuk panduan arah.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item reveal" data-reveal>
+          <button class="accordion__trigger" aria-expanded="false">
+            <span>Apakah tersedia area parkir?</span>
+            <span class="accordion__icon">+</span>
+          </button>
+          <div class="accordion__panel">
+            <p>Tersedia beberapa area parkir, namun khusus untuk roda empat cukup jauh dari lokasi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= KONTAK ================= -->
+  <section class="contact" id="kontak">
+    <div class="container contact__grid">
+      <div class="contact__info reveal-left" data-reveal>
+        <p class="eyebrow">Kontak</p>
+        <h2 class="section-title">Mari Berkunjung ke Saung Arsha</h2>
+        <p class="contact__lead">Kami menantikan kedatangan Anda untuk merasakan sendiri ketenangan di tengah hutan.</p>
+
+        <ul class="contact__list">
+          <li class="contact__list-item">
+            <span class="contact__icon">📍</span>
+            <div>
+              <span class="contact__label">Alamat</span>
+              <span class="contact__value">Kp. Leuwi cingcin, Desa Nanggerang, Kec. Cililin, Kab. Bandung Barat, Jawa Barat</span>
+            </div>
+          </li>
+          <li class="contact__list-item">
+            <span class="contact__icon">💬</span>
+            <div>
+              <span class="contact__label">WhatsApp</span>
+              <span class="contact__value"><a href="https://wa.me/6281546563956" target="_blank" rel="noopener">+62 815‑4656‑3956</a></span>
+            </div>
+          </li>
+          <li class="contact__list-item">
+            <span class="contact__icon">📷</span>
+            <div>
+              <span class="contact__label">Instagram</span>
+              <span class="contact__value"><a href="https://instagram.com/saungarsha" target="_blank" rel="noopener">@saungarsha</a></span>
+            </div>
+          </li>
+          <li class="contact__list-item">
+            <span class="contact__icon">🎵</span>
+            <div>
+              <span class="contact__label">Tiktok</span>
+              <span class="contact__value"><a href="https://www.tiktok.com/@saungarsha?_r=1&_t=ZS-98Z7b90TTSD" target="_blank" rel="noopener">@saungarsha</a></span>
+            </div>
+          </li>
+          <li class="contact__list-item">
+            <span class="contact__icon">🕐</span>
+            <div>
+              <span class="contact__label">Jam Operasional</span>
+              <span class="contact__value">Setiap Hari dan Setiap Saat</span>
+            </div>
+          </li>
+          <li class="contact__list-item">
+            <span class="contact__icon">✉️</span>
+            <div>
+              <span class="contact__label">Email</span>
+              <span class="contact__value"><a href="mailto:arshasaung@gmail.com">arshasaung@gmail.com</a></span>
+            </div>
+          </li>
+        </ul>
+
+        <a href="https://wa.me/6281546563956" target="_blank" rel="noopener" class="btn btn--whatsapp btn--ripple">
+          <svg viewBox="0 0 32 32" class="btn__icon" aria-hidden="true"><path fill="currentColor" d="M16.004 3C9.377 3 4 8.373 4 15c0 2.34.671 4.523 1.833 6.373L4 29l7.834-1.79A11.94 11.94 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3Zm6.99 16.98c-.29.816-1.44 1.5-2.36 1.7-.63.13-1.45.24-4.22-.9-3.54-1.46-5.82-5.03-6-5.27-.18-.24-1.44-1.92-1.44-3.66 0-1.74.91-2.6 1.24-2.96.33-.36.71-.45.95-.45.24 0 .48.002.68.012.22.01.51-.084.8.61.29.7.99 2.42 1.08 2.6.09.18.15.39.03.63-.12.24-.18.39-.36.6-.18.21-.38.47-.54.63-.18.18-.37.38-.16.74.21.36.94 1.55 2.02 2.51 1.39 1.24 2.56 1.63 2.92 1.81.36.18.57.15.78-.09.21-.24.9-1.05 1.14-1.41.24-.36.48-.3.81-.18.33.12 2.09.99 2.45 1.17.36.18.6.27.69.42.09.15.09.87-.2 1.69Z"/></svg>
+          Chat via WhatsApp
+        </a>
+      </div>
+
+      <div class="contact__map reveal-right" data-reveal>
+        <div class="contact__map-frame">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.967499732265!2d107.4652653748363!3d-7.013105192988382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68f388832a35d7%3A0x9f4de2727d022e6c!2sSaung%20Arsha%20leuwi%20cingcin!5e0!3m2!1sid!2sid!4v1785051976058!5m2!1sid!2sid"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Lokasi Saung Arsha pada Google Maps">
+          </iframe>
+        </div>
+        <a href="https://maps.google.com/?q=Saung+Arsha" target="_blank" rel="noopener" class="btn btn--outline btn--ripple">Buka di Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <span class="footer__brand-mark"><img src="assets/images/logo.png" alt="Logo Saung Arsha"></span>
+      <p class="footer__brand-name">Saung Arsha</p>
+      <p class="footer__desc">Penginapan tersembunyi di tengah hutan — tempat waktu terasa melambat dan alam kembali terasa dekat.</p>
+    </div>
+
+    <div class="footer__nav">
+      <h5>Navigasi</h5>
+      <a href="#tentang">Tentang</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#area">Area</a>
+      <a href="#denah">Denah</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+
+    <div class="footer__social">
+      <h5>Ikuti Kami</h5>
+      <div class="footer__social-links">
+        <a href="https://instagram.com/saungarsha" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="https://wa.me/6281546563956" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+        <a href="https://www.tiktok.com/@saungarsha?_r=1&_t=ZS-98Z7b90TTSD" target="_blank" rel="noopener" aria-label="Tiktok">Tiktok</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>&copy; <span id="year"></span> Saung Arsha. Seluruh hak cipta dilindungi.</p>
+  </div>
+</footer>
+
+<!-- ================= FLOATING BUTTONS ================= -->
+<a href="https://wa.me/6281546563956" target="_blank" rel="noopener" class="fab fab--whatsapp" aria-label="Chat WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.004 3C9.377 3 4 8.373 4 15c0 2.34.671 4.523 1.833 6.373L4 29l7.834-1.79A11.94 11.94 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3Zm6.99 16.98c-.29.816-1.44 1.5-2.36 1.7-.63.13-1.45.24-4.22-.9-3.54-1.46-5.82-5.03-6-5.27-.18-.24-1.44-1.92-1.44-3.66 0-1.74.91-2.6 1.24-2.96.33-.36.71-.45.95-.45.24 0 .48.002.68.012.22.01.51-.084.8.61.29.7.99 2.42 1.08 2.6.09.18.15.39.03.63-.12.24-.18.39-.36.6-.18.21-.38.47-.54.63-.18.18-.37.38-.16.74.21.36.94 1.55 2.02 2.51 1.39 1.24 2.56 1.63 2.92 1.81.36.18.57.15.78-.09.21-.24.9-1.05 1.14-1.41.24-.36.48-.3.81-.18.33.12 2.09.99 2.45 1.17.36.18.6.27.69.42.09.15.09.87-.2 1.69Z"/></svg>
+</a>
+
+<button class="fab fab--top" id="backToTop" aria-label="Kembali ke atas">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 5l-7 7h4v7h6v-7h4z"/></svg>
+</button>
+
+<script src="assets/js/script.js" defer></script>
+</body>
+</html>
