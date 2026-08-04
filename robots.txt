@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saung-arsha.github.io/saung-arsha-website/sitemap.xml
