@@ -142,12 +142,12 @@ section { position: relative; padding-block: 72px; }
 
 .btn--outline {
   background: transparent;
-  color: var(--c-forest-800);
-  border: 1.5px solid var(--c-forest-700);
+  color: var(--c-cream);
+  border: 1.5px solid var(--c-cream);
   margin-top: 18px;
   width: 100%;
 }
-.btn--outline:hover { background: var(--c-forest-800); color: var(--c-cream); }
+.btn--outline:hover { background: var(--c-cream); color: var(--c-forest-800); }
 
 .btn--whatsapp {
   background: linear-gradient(120deg, #2c4a3b, #1e3b2c);
