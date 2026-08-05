@@ -16,6 +16,7 @@
 <meta property="og:locale" content="id_ID">
 
 <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon-192.png">
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +43,7 @@
 <header class="navbar" id="navbar">
   <div class="navbar__inner">
     <a href="#hero" class="navbar__brand">
-      <span class="navbar__brand-mark">SA</span>
+      <span class="navbar__brand-mark"><img src="assets/images/logo.png" alt="Logo Saung Arsha"></span>
       <span class="navbar__brand-name">Saung Arsha</span>
     </a>
 
@@ -52,7 +53,6 @@
       <a href="#galeri" class="navbar__link" data-nav>Galeri</a>
       <a href="#area" class="navbar__link" data-nav>Area</a>
       <a href="#denah" class="navbar__link" data-nav>Denah</a>
-      <a href="#saung" class="navbar__link" data-nav>Sewa Saung</a>
       <a href="#faq" class="navbar__link" data-nav>FAQ</a>
       <a href="#kontak" class="navbar__link navbar__link--cta" data-nav>Kontak</a>
     </nav>
@@ -71,7 +71,6 @@
     <a href="#galeri" data-nav-mobile>Galeri</a>
     <a href="#area" data-nav-mobile>Area</a>
     <a href="#denah" data-nav-mobile>Denah</a>
-    <a href="#saung" data-nav-mobile>Sewa Saung</a>
     <a href="#faq" data-nav-mobile>FAQ</a>
     <a href="#kontak" data-nav-mobile>Kontak</a>
   </nav>
@@ -92,7 +91,7 @@
 
     <div class="hero__content">
       <div class="hero__logo reveal" data-reveal>
-        <span class="hero__logo-mark">SA</span>
+        <span class="hero__logo-mark"><img src="assets/images/logo.png" alt="Logo Saung Arsha"></span>
       </div>
       <p class="hero__eyebrow reveal" data-reveal data-delay="1">Hidden Gem &middot; Tengah Hutan</p>
       <h1 class="hero__title reveal" data-reveal data-delay="2">Saung <em>Arsha</em></h1>
@@ -203,41 +202,57 @@
       <p class="section-sub reveal" data-reveal data-delay="2">Sentuh salah satu foto untuk melihat lebih dekat.</p>
 
       <div class="gallery__grid" id="galleryGrid">
-        <button class="gallery__item reveal" data-reveal data-full="assets/images/gallery-1.jpg" data-title="Beranda Saung di Pagi Hari">
-          <img src="assets/images/gallery-1.jpg" loading="lazy" alt="Beranda saung di pagi hari" class="gallery__img">
-          <span class="gallery__overlay"><span class="gallery__caption">Beranda Saung di Pagi Hari</span></span>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/kay.jpeg" data-title="Saung Kay">
+          <img src="assets/images/kay.jpeg" loading="lazy" alt="Saung Kay" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Saung Kay</span></span>
         </button>
-        <button class="gallery__item reveal" data-reveal data-full="assets/images/gallery-2.jpg" data-title="Aliran Sungai Jernih">
-          <img src="assets/images/gallery-2.jpg" loading="lazy" alt="Aliran sungai jernih di kawasan Saung Arsha" class="gallery__img">
-          <span class="gallery__overlay"><span class="gallery__caption">Aliran Sungai Jernih</span></span>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/mahoni2.jpeg" data-title="Saung Mahoni 2">
+          <img src="assets/images/mahoni2.jpeg" loading="lazy" alt="Saung Mahoni 2" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Saung Mahoni 2</span></span>
         </button>
-        <button class="gallery__item reveal" data-reveal data-full="assets/images/gallery-3.jpg" data-title="Jalan Setapak Menuju Hutan">
-          <img src="assets/images/gallery-3.jpg" loading="lazy" alt="Jalan setapak menuju hutan" class="gallery__img">
-          <span class="gallery__overlay"><span class="gallery__caption">Jalan Setapak Menuju Hutan</span></span>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/morning.jpeg" data-title="Suasana Pagi">
+          <img src="assets/images/morning.jpeg" loading="lazy" alt="Suasana Pagi" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Suasana Pagi</span></span>
         </button>
-        <button class="gallery__item reveal" data-reveal data-full="assets/images/gallery-4.jpg" data-title="Golden Hour di Area Duduk">
-          <img src="assets/images/gallery-4.jpg" loading="lazy" alt="Golden hour di area duduk" class="gallery__img">
-          <span class="gallery__overlay"><span class="gallery__caption">Golden Hour di Area Duduk</span></span>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/malam.jpeg" data-title="Suasana Malam">
+          <img src="assets/images/malam.jpeg" loading="lazy" alt="Suasana Malam" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Suasana Malam</span></span>
         </button>
-        <button class="gallery__item reveal" data-reveal data-full="assets/images/gallery-5.jpg" data-title="Kabut Pagi di Puncak Pohon">
-          <img src="assets/images/gallery-5.jpg" loading="lazy" alt="Kabut pagi menyelimuti puncak pohon" class="gallery__img">
-          <span class="gallery__overlay"><span class="gallery__caption">Kabut Pagi di Puncak Pohon</span></span>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/mushola.jpeg" data-title="Mushola">
+          <img src="assets/images/mushola.jpeg" loading="lazy" alt="Mushola" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Mushola</span></span>
         </button>
-        <button class="gallery__item reveal" data-reveal data-full="assets/images/gallery-6.jpg" data-title="Spot Foto Favorit Tamu">
-          <img src="assets/images/gallery-6.jpg" loading="lazy" alt="Spot foto favorit tamu" class="gallery__img">
-          <span class="gallery__overlay"><span class="gallery__caption">Spot Foto Favorit Tamu</span></span>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/mahoni1.jpeg" data-title="Saung Mahoni 1">
+          <img src="assets/images/mahoni1.jpeg" loading="lazy" alt="Saung Mahoni 1" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Saung Mahoni 1</span></span>
         </button>
-        <button class="gallery__item reveal" data-reveal data-full="assets/images/gallery-7.jpg" data-title="Tenda di Bawah Kanopi Hutan">
-          <img src="assets/images/gallery-7.jpg" loading="lazy" alt="Tenda camping di bawah kanopi hutan" class="gallery__img">
-          <span class="gallery__overlay"><span class="gallery__caption">Tenda di Bawah Kanopi Hutan</span></span>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/kaliandra.jpeg" data-title="Saung Kaliandra">
+          <img src="assets/images/kaliandra.jpeg" loading="lazy" alt="Saung Kaliandra" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Saung Kaliandra</span></span>
         </button>
-        <button class="gallery__item reveal" data-reveal data-full="assets/images/gallery-8.jpg" data-title="Senja dari Area Santai">
-          <img src="assets/images/gallery-8.jpg" loading="lazy" alt="Senja dilihat dari area santai" class="gallery__img">
-          <span class="gallery__overlay"><span class="gallery__caption">Senja dari Area Santai</span></span>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/sungai1.jpeg" data-title="Area sungai di bawah jembatan">
+          <img src="assets/images/sungai1.jpeg" loading="lazy" alt="Area sungai di bawah jembatan" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Area sungai di bawah jembatan</span></span>
         </button>
-        <button class="gallery__item reveal" data-reveal data-full="assets/images/gallery-9.jpg" data-title="Detail Saung Kayu">
-          <img src="assets/images/gallery-9.jpg" loading="lazy" alt="Detail arsitektur saung kayu" class="gallery__img">
-          <span class="gallery__overlay"><span class="gallery__caption">Detail Saung Kayu</span></span>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/pagi.jpeg" data-title="Pagi hari">
+          <img src="assets/images/pagi.jpeg" loading="lazy" alt="Detail arsitektur saung kayu" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Pagi hari</span></span>
+        </button>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/night.jpeg" data-title="Warung di malam hari">
+          <img src="assets/images/night.jpeg" loading="lazy" alt="Warung di malam hari" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Warung di malam hari</span></span>
+        </button>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/board.jpeg" data-title="Board Saung Arsha">
+          <img src="assets/images/board.jpeg" loading="lazy" alt="Suasana Malam" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Board Saung Arsha</span></span>
+        </button>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/arsha.jpeg" data-title="Saung Arsha">
+          <img src="assets/images/arsha.jpeg" loading="lazy" alt="Warung di malam hari" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Saung Arsha</span></span>
+        </button>
+        <button class="gallery__item reveal" data-reveal data-full="assets/images/makan1.jpeg" data-title="Makan bersama di malam hari">
+          <img src="assets/images/makan1.jpeg" loading="lazy" alt="Makan bersama di malam hari" class="gallery__img">
+          <span class="gallery__overlay"><span class="gallery__caption">Makan bersama di malam hari</span></span>
         </button>
       </div>
     </div>
@@ -263,28 +278,28 @@
       <div class="highlight__slider" id="highlightSlider">
         <div class="highlight__track" id="highlightTrack">
           <div class="highlight-card">
-            <img src="assets/images/highlight-1.jpg" loading="lazy" alt="Area penginapan Saung Arsha" class="highlight-card__img">
-            <div class="highlight-card__label">Penginapan</div>
+            <img src="assets/images/skay.jpeg" loading="lazy" alt="Saung Kay" class="highlight-card__img">
+            <div class="highlight-card__label">Saung Kay</div>
           </div>
           <div class="highlight-card">
-            <img src="assets/images/highlight-2.jpg" loading="lazy" alt="Sungai di kawasan Saung Arsha" class="highlight-card__img">
+            <img src="assets/images/sungai1.jpeg" loading="lazy" alt="Sungai" class="highlight-card__img">
             <div class="highlight-card__label">Sungai</div>
           </div>
           <div class="highlight-card">
-            <img src="assets/images/highlight-3.jpg" loading="lazy" alt="Area duduk santai" class="highlight-card__img">
-            <div class="highlight-card__label">Area Duduk</div>
+            <img src="assets/images/warung.jpeg" loading="lazy" alt="Warung Sawali" class="highlight-card__img">
+            <div class="highlight-card__label">Warung Sawali</div>
           </div>
           <div class="highlight-card">
-            <img src="assets/images/highlight-4.jpg" loading="lazy" alt="Spot foto ikonik" class="highlight-card__img">
-            <div class="highlight-card__label">Spot Foto</div>
+            <img src="assets/images/sedong.jpeg" loading="lazy" alt="Batu Sedong" class="highlight-card__img">
+            <div class="highlight-card__label">Batu Sedong</div>
           </div>
           <div class="highlight-card">
-            <img src="assets/images/highlight-5.jpg" loading="lazy" alt="Area santai pengunjung" class="highlight-card__img">
-            <div class="highlight-card__label">Area Santai</div>
+            <img src="assets/images/apiunggun.jpeg" loading="lazy" alt="Area api unggun" class="highlight-card__img">
+            <div class="highlight-card__label">Area api unggun</div>
           </div>
           <div class="highlight-card">
-            <img src="assets/images/highlight-6.jpg" loading="lazy" alt="Pemandangan alam sekitar" class="highlight-card__img">
-            <div class="highlight-card__label">View Alam</div>
+            <img src="assets/images/kebun.jpeg" loading="lazy" alt="Kebun" class="highlight-card__img">
+            <div class="highlight-card__label">kebun</div>
           </div>
         </div>
       </div>
@@ -301,29 +316,10 @@
     <div class="container">
       <p class="eyebrow eyebrow--center reveal" data-reveal>Denah Kawasan</p>
       <h2 class="section-title section-title--center reveal" data-reveal data-delay="1">Kenali Setiap Sudut Sebelum Berkunjung</h2>
-      <p class="section-sub reveal" data-reveal data-delay="2">Ketuk titik pada denah untuk melihat informasi lokasi.</p>
+      <p class="section-sub reveal" data-reveal data-delay="2">Gambaran lokasi dan area utama di kawasan Saung Arsha.</p>
 
       <div class="denah__wrap reveal" data-reveal data-delay="3">
-        <img src="assets/images/denah.jpg" alt="Denah kawasan Saung Arsha" class="denah__img">
-
-        <button class="denah__marker" style="top:28%; left:22%;" data-info="Mushola" data-desc="Tempat ibadah nyaman dekat area parkir.">
-          <span class="denah__marker-dot"></span>
-        </button>
-        <button class="denah__marker" style="top:62%; left:18%;" data-info="Toilet" data-desc="Toilet bersih tersedia di beberapa titik kawasan.">
-          <span class="denah__marker-dot"></span>
-        </button>
-        <button class="denah__marker" style="top:80%; left:40%;" data-info="Parkir" data-desc="Area parkir luas untuk motor dan mobil.">
-          <span class="denah__marker-dot"></span>
-        </button>
-        <button class="denah__marker" style="top:35%; left:70%;" data-info="Sungai" data-desc="Aliran sungai jernih di sisi timur kawasan.">
-          <span class="denah__marker-dot"></span>
-        </button>
-        <button class="denah__marker" style="top:50%; left:52%;" data-info="Saung" data-desc="Bangunan utama tempat bersantai dan menginap.">
-          <span class="denah__marker-dot"></span>
-        </button>
-        <button class="denah__marker" style="top:20%; left:55%;" data-info="Spot Foto" data-desc="Titik favorit pengunjung untuk berfoto.">
-          <span class="denah__marker-dot"></span>
-        </button>
+        <img src="assets/images/denah.jpeg" alt="Denah kawasan Saung Arsha" class="denah__img">
 
         <div class="denah__tooltip" id="denahTooltip">
           <button class="denah__tooltip-close" id="denahTooltipClose" aria-label="Tutup">&times;</button>
@@ -335,110 +331,6 @@
   </section>
 
   <!-- ================= FAQ ================= -->
-  <!-- ================= DAFTAR SEWA SAUNG ================= -->
-  <section class="saung" id="saung">
-    <div class="container">
-      <p class="eyebrow eyebrow--center reveal" data-reveal>Daftar Sewa</p>
-      <h2 class="section-title section-title--center reveal" data-reveal data-delay="1">Pilih Saung Sesuai Kebutuhanmu</h2>
-      <p class="section-sub reveal" data-reveal data-delay="2">Setiap saung punya kapasitas dan fasilitas berbeda, sesuaikan dengan jumlah rombonganmu.</p>
-
-      <div class="saung__grid">
-        <div class="saung-card reveal" data-reveal data-delay="1">
-          <div class="saung-card__media">
-            <img src="assets/images/arsha.jpeg" loading="lazy" alt="Saung Arsha" class="saung-card__img">
-            <span class="saung-card__price">Rp600.000</span>
-          </div>
-          <div class="saung-card__body">
-            <h3 class="saung-card__name">Saung Arsha</h3>
-            <span class="saung-card__capacity">👥 15–20 orang</span>
-            <ul class="saung-card__facilities">
-              <li>Kasur + tikar</li>
-              <li>Dapur (hawu)</li>
-              <li>Kamar mandi + WC</li>
-              <li>Aula luas</li>
-              <li>Box karaoke</li>
-              <li>Tempat cas HP</li>
-            </ul>
-            <a href="https://wa.me/6281546563956?text=Halo%2C%20saya%20mau%20tanya%20ketersediaan%20Saung%20Arsha" target="_blank" rel="noopener" class="btn btn--primary saung-card__btn">Pesan via WhatsApp</a>
-          </div>
-        </div>
-
-        <div class="saung-card reveal" data-reveal data-delay="2">
-          <div class="saung-card__media">
-            <img src="assets/images/kay.jpeg" loading="lazy" alt="Saung Kay" class="saung-card__img">
-            <span class="saung-card__price">Rp400.000</span>
-          </div>
-          <div class="saung-card__body">
-            <h3 class="saung-card__name">Saung Kay</h3>
-            <span class="saung-card__capacity">👥 6–10 orang</span>
-            <ul class="saung-card__facilities">
-              <li>Kasur + tikar</li>
-              <li>Kamar mandi + WC</li>
-              <li>Hammock</li>
-              <li>Aula</li>
-              <li>Tempat cas HP</li>
-            </ul>
-            <a href="https://wa.me/6281546563956?text=Halo%2C%20saya%20mau%20tanya%20ketersediaan%20Saung%20Kay" target="_blank" rel="noopener" class="btn btn--primary saung-card__btn">Pesan via WhatsApp</a>
-          </div>
-        </div>
-
-        <div class="saung-card reveal" data-reveal data-delay="3">
-          <div class="saung-card__media">
-            <img src="assets/images/kaliandra.jpeg" loading="lazy" alt="Saung Kaliandra" class="saung-card__img">
-            <span class="saung-card__price">Rp300.000</span>
-          </div>
-          <div class="saung-card__body">
-            <h3 class="saung-card__name">Saung Kaliandra</h3>
-            <span class="saung-card__capacity">👥 6–10 orang</span>
-            <ul class="saung-card__facilities">
-              <li>Kasur + tikar</li>
-              <li>Kipas</li>
-              <li>Kursi</li>
-              <li>Selimut</li>
-              <li>Tempat cas HP</li>
-            </ul>
-            <a href="https://wa.me/6281546563956?text=Halo%2C%20saya%20mau%20tanya%20ketersediaan%20Saung%20Kaliandra" target="_blank" rel="noopener" class="btn btn--primary saung-card__btn">Pesan via WhatsApp</a>
-          </div>
-        </div>
-
-        <div class="saung-card reveal" data-reveal data-delay="1">
-          <div class="saung-card__media">
-            <img src="assets/images/mahoni1.jpeg" loading="lazy" alt="Saung Mahoni tipe 1" class="saung-card__img">
-            <span class="saung-card__price">Rp250.000</span>
-          </div>
-          <div class="saung-card__body">
-            <h3 class="saung-card__name">Saung Mahoni 1</h3>
-            <span class="saung-card__capacity">👥 6–10 orang</span>
-            <ul class="saung-card__facilities">
-              <li>Kasur + tikar</li>
-              <li>Matras</li>
-              <li>Kursi</li>
-              <li>Hammock</li>
-            </ul>
-            <a href="https://wa.me/6281546563956?text=Halo%2C%20saya%20mau%20tanya%20ketersediaan%20Saung%20Mahoni%201" target="_blank" rel="noopener" class="btn btn--primary saung-card__btn">Pesan via WhatsApp</a>
-          </div>
-        </div>
-
-        <div class="saung-card reveal" data-reveal data-delay="2">
-          <div class="saung-card__media">
-            <img src="assets/images/mahoni2.jpeg" loading="lazy" alt="Saung Mahoni tipe 2" class="saung-card__img">
-            <span class="saung-card__price">Rp250.000</span>
-          </div>
-          <div class="saung-card__body">
-            <h3 class="saung-card__name">Saung Mahoni 2</h3>
-            <span class="saung-card__capacity">👥 2 orang</span>
-            <ul class="saung-card__facilities">
-              <li>Kasur + matras</li>
-              <li>Tikar</li>
-              <li>Tempat cas HP</li>
-            </ul>
-            <a href="https://wa.me/6281546563956?text=Halo%2C%20saya%20mau%20tanya%20ketersediaan%20Saung%20Mahoni%202" target="_blank" rel="noopener" class="btn btn--primary saung-card__btn">Pesan via WhatsApp</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="faq" id="faq">
     <div class="container container--narrow">
       <p class="eyebrow eyebrow--center reveal" data-reveal>Pertanyaan Umum</p>
@@ -451,7 +343,7 @@
             <span class="accordion__icon">+</span>
           </button>
           <div class="accordion__panel">
-            <p>Saung Arsha buka setiap hari mulai pukul 07.00 hingga 18.00 WIB. Di luar jam tersebut, silakan hubungi kami terlebih dahulu.</p>
+            <p>Saung Arsha buka setiap hari dan setiap saat, silakan hubungi kami terlebih dahulu.</p>
           </div>
         </div>
 
@@ -491,7 +383,7 @@
             <span class="accordion__icon">+</span>
           </button>
           <div class="accordion__panel">
-            <p>Tersedia area parkir yang cukup luas untuk kendaraan roda dua maupun roda empat.</p>
+            <p>Tersedia beberapa area parkir, namun khusus untuk roda empat cukup jauh dari lokasi.</p>
           </div>
         </div>
       </div>
@@ -511,7 +403,7 @@
             <span class="contact__icon">📍</span>
             <div>
               <span class="contact__label">Alamat</span>
-              <span class="contact__value">Kp. Ciririp Bangsaya, Karyamukti, Kec. Cililin, Kabupaten Bandung Barat, Jawa Barat</span>
+              <span class="contact__value">Kp. Leuwi cingcin, Desa Nanggerang, Kec. Cililin, Kab. Bandung Barat, Jawa Barat</span>
             </div>
           </li>
           <li class="contact__list-item">
@@ -540,17 +432,24 @@
             </div>
           </li>
           <li class="contact__list-item">
+            <span class="contact__icon">🎵</span>
+            <div>
+              <span class="contact__label">Tiktok</span>
+              <span class="contact__value"><a href="https://www.tiktok.com/@saungarsha?_r=1&_t=ZS-98Z7b90TTSD" target="_blank" rel="noopener">@saungarsha</a></span>
+            </div>
+          </li>
+          <li class="contact__list-item">
             <span class="contact__icon">🕐</span>
             <div>
               <span class="contact__label">Jam Operasional</span>
-              <span class="contact__value">Setiap Hari, 07.00 — 18.00 WIB</span>
+              <span class="contact__value">Setiap Hari dan Setiap Saat</span>
             </div>
           </li>
           <li class="contact__list-item">
             <span class="contact__icon">✉️</span>
             <div>
               <span class="contact__label">Email</span>
-              <span class="contact__value"><a href="mailto:halo@saungarsha.com">halo@saungarsha.com</a></span>
+              <span class="contact__value"><a href="mailto:arshasaung@gmail.com">arshasaung@gmail.com</a></span>
             </div>
           </li>
         </ul>
@@ -581,7 +480,7 @@
 <footer class="footer">
   <div class="container footer__grid">
     <div class="footer__brand">
-      <span class="footer__brand-mark">SA</span>
+      <span class="footer__brand-mark"><img src="assets/images/logo.png" alt="Logo Saung Arsha"></span>
       <p class="footer__brand-name">Saung Arsha</p>
       <p class="footer__desc">Penginapan tersembunyi di tengah hutan — tempat waktu terasa melambat dan alam kembali terasa dekat.</p>
     </div>
@@ -601,6 +500,7 @@
       <div class="footer__social-links">
         <a href="https://instagram.com/saungarsha" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
         <a href="https://wa.me/6281546563956" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+        <a href="https://www.tiktok.com/@saungarsha?_r=1&_t=ZS-98Z7b90TTSD" target="_blank" rel="noopener" aria-label="Tiktok">Tiktok</a>
       </div>
     </div>
   </div>
@@ -622,3 +522,4 @@
 <script src="assets/js/script.js" defer></script>
 </body>
 </html>
+
